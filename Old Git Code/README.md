@@ -1,3 +1,6 @@
+## Clone of the code referenced in the Zeckendorf Cant Paper
+### Link: https://github.com/paulbsmith1996/ZeckendorfGame
+
 Paul Baird-Smith 2017/2018
 
 TreeDrawer is used to give a visual representation of the tree structure of the
