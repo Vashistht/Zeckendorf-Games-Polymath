@@ -38,7 +38,7 @@
 
 import java.util.ArrayList;
 import java.util.LinkedList;
-
+import java.util.*;
 import javax.swing.JApplet;
 import java.awt.Graphics;
 import java.awt.Color;
@@ -66,7 +66,7 @@ public class TreeDrawer extends JApplet implements Runnable {
      */    
     private Game game;
     private LinkedList<GameState> winningPath;
-
+	public static Scanner input = new Scanner (System.in);
 
     /**
      * Initialize the Game object on desired number, and play the game, gathering
@@ -75,7 +75,8 @@ public class TreeDrawer extends JApplet implements Runnable {
     public void init() {
 	
 	// Start and play game
-	game = new Game(9);
+	System.out.println("Game starts with n = ");
+	game = new Game(input.nextInt());
 	game.playGame();
 
 	// Get the data for the winning path and save it as a global variable
